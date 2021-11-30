@@ -1,0 +1,32 @@
+$bg_font: "Shrikhand", cursive;
+$sm_font: "Roboto", sans-serif;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$size: 45px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+header {
+  h1 {
+    padding: 15px;
+    background-color: blue;
+    font-family: $bg_font;
+    text-align: center;
+    font-size: $size;
+  }
+  #spot {
+    width: 100%;
+    background-color: gray;
+    i {
+      width: 20px;
+      height: 20px;
+      color: $secondary-color;
+    }
+  }
+}
