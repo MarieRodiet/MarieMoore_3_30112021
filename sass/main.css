@@ -1,0 +1,203 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, autres WebKit */
+}
+
+.omf_header h1 {
+  padding: 18px;
+  font-family: "Shrikhand", cursive;
+  font-size: 45px;
+  text-align: center;
+}
+
+/*Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.*/
+/*media query mixins*/
+.projet-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 599px) {
+  .projet-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.btn {
+  border-radius: 40px;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70px;
+  padding: 0 25px;
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  background: #9356dc;
+  background: linear-gradient(354deg, #9356dc 15%, #ff79da 93%);
+  -webkit-box-shadow: 0px 8px 6px #cdcdcd;
+          box-shadow: 0px 8px 6px #cdcdcd;
+}
+
+.instructions__container__card {
+  background-color: #f2f2f2;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 23px;
+  font-weight: 500;
+  -webkit-box-shadow: 2px 2px 12px #cdcdcd;
+          box-shadow: 2px 2px 12px #cdcdcd;
+}
+
+.instructions__container__card__nb {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  display: inline-block;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  background-color: #9356dc;
+}
+
+.instructions__container__card__nb__content {
+  color: #fff;
+  -webkit-transform: translateX(-37px);
+          transform: translateX(-37px);
+}
+
+.instructions__container__card .icon_box {
+  width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 30px;
+  color: #676767;
+}
+
+.instructions__container__card p {
+  padding: 0 20px;
+}
+
+.instructions__container__card:hover {
+  background-color: #f2eafb;
+}
+
+.instructions__container__card:hover > .icon_box {
+  color: #9356dc;
+}
+
+/*scss rules for the headers of the menu pages*/
+.location {
+  background-color: #e6e6e6;
+  -webkit-box-shadow: inset 0px 5px 4px silver;
+          box-shadow: inset 0px 5px 4px silver;
+}
+
+.location__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.location__container__element {
+  padding-left: 30px;
+}
+
+.explore {
+  background-color: #f2f2f2;
+  height: 430px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore__header {
+  font-size: 35px;
+  width: 70%;
+  text-align: center;
+}
+
+.explore p {
+  width: 85%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.instructions {
+  font-family: "Roboto", sans-serif;
+  padding: 70px 20px;
+}
+
+.instructions h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.instructions__container {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*media query mixins*/
+.projet-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 599px) {
+  .projet-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=main.css.map */

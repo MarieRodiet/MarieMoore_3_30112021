@@ -1,0 +1,10 @@
+@import "../utils/variables";
+
+.omf_header {
+  h1 {
+    padding: 18px;
+    font-family: $brand_font;
+    font-size: $header_size;
+    text-align: center;
+  }
+}

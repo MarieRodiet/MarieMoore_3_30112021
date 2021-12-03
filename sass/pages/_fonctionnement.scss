@@ -1,0 +1,17 @@
+@import "../utils/variables";
+.instructions {
+  font-family: $text_font;
+  padding: 70px 20px;
+  h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  &__container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+  }
+}

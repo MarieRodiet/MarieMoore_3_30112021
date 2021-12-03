@@ -1,0 +1,5 @@
+/*Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.*/
+@import "../utils/mixins";
+.btn {
+  @include gradient-btn;
+}

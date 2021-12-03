@@ -1,6 +1,25 @@
 {
+  "name": "oh_my_food",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassrooms dev web front end js react",
+  "main": "index.js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass ./sass/main.scss:.public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarieRodiet/MarieMoore_3_30112021.git"
+  },
+  "author": "Marie Moore",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/MarieRodiet/MarieMoore_3_30112021/issues"
+  },
+  "homepage": "https://github.com/MarieRodiet/MarieMoore_3_30112021#readme"
 }

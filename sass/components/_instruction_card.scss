@@ -1,0 +1,39 @@
+.instructions__container__card {
+  background-color: $bgd-gray;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: $location_size;
+  font-weight: 500;
+  box-shadow: 2px 2px 12px darken($bgd-location-gray, 10%);
+  &__nb {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: inline-block;
+    transform: translateX(-10px);
+    background-color: $primary-color;
+  }
+  &__nb__content {
+    color: #fff;
+    transform: translateX(-37px);
+  }
+  .icon_box {
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: $title_size;
+    color: darken($color: $bgd-location-gray, $amount: 50%);
+  }
+  p{
+      padding: 0 20px;
+  }
+  &:hover {
+    background-color: lighten($primary-color, 35%);
+  }
+  &:hover > .icon_box {
+    color: $primary-color;
+  }
+}

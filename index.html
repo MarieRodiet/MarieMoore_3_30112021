@@ -18,16 +18,52 @@
       defer
       src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <header>
+    <header class="omf_header">
       <h1>ohmyfood</h1>
-      <div id="spot">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Paris, Belleville</p>
-
-      </div>
     </header>
+    <div class="location">
+      <div class="location__container">
+        <i class="fas fa-map-marker-alt"></i>
+        <p class="location__container__element">Paris, Belleville</p>
+      </div>
+    </div>
+    <div class="explore">
+      <h1 class="explore__header">Réservez le menu qui vous convient</h1>
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <button class="btn">Explorer nos restaurants</button>
+    </div>
+    <div class="instructions">
+      <h1>Fonctionnement</h1>
+      <div class="instructions__container">
+        <div class="instructions__container__card">
+          <span class="instructions__container__card__nb"></span>
+          <span class="instructions__container__card__nb__content">1</span>
+          <div class="icon_box">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <p>Choississez un restaurant</p>
+        </div>
+        <div class="instructions__container__card">
+          <span class="instructions__container__card__nb"></span>
+          <span class="instructions__container__card__nb__content">1</span>
+          <div class="icon_box">
+            <i class="fas fa-list"></i>
+          </div>
+          <p>Composez votre menu</p>
+        </div>
+
+        <div class="instructions__container__card">
+          <span class="instructions__container__card__nb"></span>
+          <span class="instructions__container__card__nb__content">1</span>
+          <div class="icon_box">
+            <i class="fas fa-store"></i>
+          </div>
+          <p>Dégustez au restaurant</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
