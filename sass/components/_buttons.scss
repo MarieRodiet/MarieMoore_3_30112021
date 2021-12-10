@@ -2,4 +2,12 @@
 @import "../utils/mixins";
 .btn {
   @include gradient-btn;
+  &:hover {
+    box-shadow: 0px 8px 6px darken($bgd-location-gray, 20%);
+    background: linear-gradient(
+      354deg,
+      rgba(147, 86, 220, 0.8) 15%,
+      rgba(255, 121, 218, 0.8) 93%
+    );
+  }
 }

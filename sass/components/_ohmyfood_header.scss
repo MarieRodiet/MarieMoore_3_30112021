@@ -1,10 +1,11 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 
-.omf_header {
-  h1 {
-    padding: 18px;
-    font-family: $brand_font;
-    font-size: $header_size;
-    text-align: center;
+header {
+  padding: 8px;
+  text-align: center;
+
+  svg {
+    width: 250px;
   }
 }

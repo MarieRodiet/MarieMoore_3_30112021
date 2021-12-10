@@ -1,0 +1,16 @@
+.restaurants {
+  background-color: $bgd-gray;
+  width: 100%;
+  height: auto;
+  padding: 70px 3%;
+
+  h1 {
+    @include typo-size($text_font, map-get($font-sizes, title));
+    padding-bottom: 40px;
+  }
+
+  .restaurants_section {
+    display: flex;
+    flex-direction: column;
+  }
+}

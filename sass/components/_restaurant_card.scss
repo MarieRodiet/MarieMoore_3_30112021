@@ -1,0 +1,53 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.restaurants_section_card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 90%;
+  height: 365px;
+  max-width: 600px;
+  margin: 15px auto;
+  overflow: hidden;
+  @include box-shadow(0px, 0px, 25px);
+
+  img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+  }
+  .card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 30px;
+    .restaurant {
+      width: 70%;
+      height: 110px;
+      padding: 20px 15px;
+
+      &_name {
+        @include typo-size($text_font, map-get($font-sizes, xlg));
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+
+      &_location {
+        @include typo-size($text_font, map-get($font-sizes, xlg));
+        font-weight: 300;
+      }
+    }
+    .heart_box {
+      font-size: map-get($map: $font-sizes, $key: lg);
+      width: 30px;
+      height: 30px;
+    }
+    .heart_box svg {
+      color: darken($color: $bgd-gray, $amount: 60);
+    }
+  }
+}

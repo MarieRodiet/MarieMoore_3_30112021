@@ -5,7 +5,7 @@
   height: 70px;
   padding: 0 25px;
   color: #fff;
-  font-size: $location_size;
+  @include typo-size($text_font, map-get($font-sizes, xlg));
   cursor: pointer;
   background: rgb(147, 86, 220);
   background: linear-gradient(
@@ -13,7 +13,22 @@
     rgba(147, 86, 220, 1) 15%,
     rgba(255, 121, 218, 1) 93%
   );
-  box-shadow: 0px 8px 6px darken($bgd-location-gray, 10%);
+  @include box-shadow(0px, 8px, 6px);
+}
+
+@mixin box-shadow($x, $y, $blurr) {
+  box-shadow: $x $y $blurr darken($bgd-location-gray, 10%);
+}
+
+@mixin typo-size($typo, $size) {
+  font-family: $typo;
+  font-size: $size;
+}
+
+@mixin icon-gradient {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /*media query mixins*/

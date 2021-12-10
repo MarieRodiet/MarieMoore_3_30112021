@@ -24,9 +24,13 @@
   }
 }
 
-header .omf_header {
-  padding: 18px;
-  font-size: 45px;
+header {
+  padding: 8px;
+  text-align: center;
+}
+
+header svg {
+  width: 250px;
 }
 
 /*Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.*/
