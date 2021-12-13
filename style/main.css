@@ -25,12 +25,110 @@
 }
 
 header {
-  padding: 8px;
+  padding: 20px;
   text-align: center;
+  height: 90px;
 }
 
-header svg {
-  width: 250px;
+header img {
+  height: 50px;
+}
+
+.badge {
+  position: absolute;
+  -webkit-transform: translate(330px, -255px);
+          transform: translate(330px, -255px);
+  border-radius: 5px;
+  width: 120px;
+  height: 45px;
+  background-color: #99e2d0;
+  color: #278870;
+  text-align: center;
+  justify-items: center;
+  font-weight: 500;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.hearts_container {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+}
+
+.border-heart-box {
+  width: 40px;
+  height: 40px;
+}
+
+path.one {
+  fill: gray;
+}
+
+path.two {
+  fill: white;
+  -webkit-transform: translate(35px, 35px) scale(0.85);
+          transform: translate(35px, 35px) scale(0.85);
+}
+
+.gradient-heart-box {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+path.three {
+  fill: url(#MyGradient);
+}
+
+.hearts_container:hover > .gradient-heart-box {
+  -webkit-animation: showUp 1s linear 0.2s 1 normal forwards;
+          animation: showUp 1s linear 0.2s 1 normal forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes showUp {
+  0% {
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0, 3;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0, 3;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.*/
@@ -149,7 +247,10 @@ header svg {
   }
 }
 
-.restaurants_section_card {
+.restaurant_link {
+  margin: 15px auto;
+  width: 90%;
+  max-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,22 +261,22 @@ header svg {
   background-color: #fff;
   border-radius: 20px;
   cursor: pointer;
-  width: 90%;
-  height: 365px;
-  max-width: 600px;
-  margin: 15px auto;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 25px #cdcdcd;
           box-shadow: 0px 0px 25px #cdcdcd;
+  text-decoration: none;
 }
 
-.restaurants_section_card img {
+.restaurant_link img {
   width: 100%;
+  height: 270px;
   border-radius: 20px 20px 0 0;
   overflow: hidden;
+  position: relative;
 }
 
-.restaurants_section_card .card_content {
+.restaurant_link .card_content {
+  height: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,36 +287,27 @@ header svg {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding-right: 30px;
+  padding: 30px 5px;
+  color: black;
 }
 
-.restaurants_section_card .card_content .restaurant {
+.restaurant_link .card_content .restaurant {
   width: 70%;
   height: 110px;
   padding: 20px 15px;
 }
 
-.restaurants_section_card .card_content .restaurant_name {
+.restaurant_link .card_content .restaurant_name {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: 600;
   padding-bottom: 10px;
 }
 
-.restaurants_section_card .card_content .restaurant_location {
+.restaurant_link .card_content .restaurant_location {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: 300;
-}
-
-.restaurants_section_card .card_content .heart_box {
-  font-size: 20px;
-  width: 30px;
-  height: 30px;
-}
-
-.restaurants_section_card .card_content .heart_box svg {
-  color: #595959;
 }
 
 footer {
@@ -267,7 +359,7 @@ footer p a {
   padding: 70px 3%;
 }
 
-.restaurants h1 {
+.restaurants h2 {
   font-family: "Roboto", sans-serif;
   font-size: 35px;
   padding-bottom: 40px;
@@ -362,7 +454,7 @@ footer p a {
   padding: 70px 5%;
 }
 
-.instructions h1 {
+.instructions h2 {
   padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 35px;

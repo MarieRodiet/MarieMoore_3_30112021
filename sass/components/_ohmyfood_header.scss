@@ -2,10 +2,11 @@
 @import "../utils/mixins";
 
 header {
-  padding: 8px;
+  padding: 20px;
   text-align: center;
+  height: 90px;
 
-  svg {
-    width: 250px;
+  img {
+    height: 50px;
   }
 }

@@ -1,7 +1,7 @@
 @import "../utils/variables";
 .instructions {
     padding: 70px 5%;
-  h1 {
+  h2 {
     padding-bottom: 20px;
       @include typo-size($text_font, map-get($font-sizes, title));
   }
