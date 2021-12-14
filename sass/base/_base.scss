@@ -1,10 +1,10 @@
 $brand_font: "Shrikhand", cursive;
 $text_font: "Roboto", sans-serif;
 
-$breakpoints : (
+$breakpoints: (
   mobile: 599px,
   tablet: 798px,
-  desktop: 998px
+  desktop: 998px,
 );
 
 * {
@@ -14,5 +14,6 @@ $breakpoints : (
   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
 }
-
-
+body {
+  width: 100%;
+}

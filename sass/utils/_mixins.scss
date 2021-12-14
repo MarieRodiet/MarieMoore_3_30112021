@@ -2,10 +2,9 @@
   border-radius: 40px;
   border: none;
   width: fit-content;
-  height: 70px;
-  padding: 0 25px;
+  padding: 15px 20px;
   color: #fff;
-  @include typo-size($text_font, map-get($font-sizes, xlg));
+  @include typo-size($text_font, map-get($font-sizes, sm));
   cursor: pointer;
   background: rgb(147, 86, 220);
   background: linear-gradient(
@@ -17,7 +16,7 @@
 }
 
 @mixin box-shadow($x, $y, $blurr) {
-  box-shadow: $x $y $blurr darken($bgd-location-gray, 10%);
+  box-shadow: $x $y $blurr darken($bgd-gray, 10%);
 }
 
 @mixin typo-size($typo, $size) {

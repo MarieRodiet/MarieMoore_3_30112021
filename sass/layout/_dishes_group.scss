@@ -1,0 +1,25 @@
+.dish-area {
+  background-color: $bgd-gray;
+  position: relative;
+  top: 60px;
+  padding: 0 15px;
+
+  h3 {
+    font-weight: 300;
+    @include typo-size($text_font, map-get($font-sizes, sm));
+    color: darken($bgd-gray, 70%);
+    padding-bottom: 2px;
+  }
+  .border {
+    width: 50px;
+    height: 3px;
+    background-color: $tertiary-color;
+  }
+
+  .dish-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 25px 0;
+  }
+}

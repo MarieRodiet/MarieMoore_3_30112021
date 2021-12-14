@@ -1,7 +1,6 @@
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
-$bgd-location-gray: #e6e6e6;
 $bgd-gray: #f2f2f2;
 
 $header_size: 45px;
@@ -14,15 +13,19 @@ $detail_size: 12px;
 
 $font-sizes: (
   //ohmyfood
-  header: 45px,
+  header: 50px,
+  sm-header: 45px,
   //Reservez, fonctionnement, Restaurants
-  title: 35px,
+  bg-title: 37px,
+  title: 30px,
+  sm-title: 28px,
   //icons
-  xxlg: 30px,
+  xxlg: 25px,
   //location txt, instruction txt
-  xlg: 25px,
+  xlg: 22px,
   lg: 20px,
-  medium: 15px,
-  sm: 14px,
-  xsm: 12px
+  sm: 18px,
+  xsm: 15px
 );
+
+$tablet-breakpoint: 990px;

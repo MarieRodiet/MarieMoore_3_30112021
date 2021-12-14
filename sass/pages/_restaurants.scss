@@ -14,3 +14,16 @@
     flex-direction: column;
   }
 }
+@media only screen and (min-width: $tablet-breakpoint) {
+  .restaurants {
+    padding: 20px;
+    h2 {
+      @include typo-size($text_font, map-get($font-sizes, title));
+    }
+      .restaurants_section {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  }
+}

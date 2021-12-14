@@ -1,44 +1,60 @@
 .instructions__container__card {
   background-color: $bgd-gray;
-  height: 110px;
-  width: 90%;
+  height: 85px;
+  width: 100%;
   max-width: 600px;
-  margin: auto;
+  margin: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
   border-radius: 25px;
-  @include typo-size($text_font, map-get($font-sizes, xlg));
+  @include typo-size($text_font, map-get($font-sizes, sm));
   font-weight: 500;
   @include box-shadow(2px, 2px, 12px);
   &__nb {
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    display: inline-block;
-    transform: translateX(-15px);
+    transform: translateX(-16px);
     background-color: $primary-color;
   }
   &__nb__content {
     color: #fff;
     transform: translateX(-43px);
-    @include typo-size($text_font, map-get($font-sizes, xlg));
+    @include typo-size($text_font, map-get($font-sizes, sm));
     font-weight: 400;
   }
   .icon_box {
     width: 40px;
     height: 40px;
-    padding: 0 10px;
-    @include typo-size($text_font, map-get($font-sizes, xxlg));
-    color: darken($color: $bgd-location-gray, $amount: 50%);
+    padding: 10px 0px;
+
+    @include typo-size($text_font, map-get($font-sizes, xlg));
+    color: darken($color: $bgd-gray, $amount: 50%);
   }
   p {
-    padding: 0 20px;
+    font-weight: 300;
   }
   &:hover {
     background-color: lighten($primary-color, 35%);
   }
   &:hover > .icon_box {
     color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  .instructions__container__card {
+    width: 30%;
+    @include typo-size($text_font, map-get($font-sizes, sm));
+    font-weight: 300;
+
+    .icon_box {
+      margin: 10px 0px 0px -12px;
+      @include typo-size($text_font, map-get($font-sizes, xlg));
+    }
+    p {
+      padding: 0px;
+    }
   }
 }

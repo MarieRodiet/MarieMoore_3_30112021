@@ -2,15 +2,15 @@
 @import "../utils/mixins";
 
 .location {
-  background-color: $bgd-location-gray;
-  box-shadow: inset 0px 5px 4px darken($bgd-location-gray, 15%);
+  background-color: darken($bgd-gray, 2%);
+  box-shadow: inset 0px 5px 4px darken($bgd-gray, 10%);
 
   &__container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
-    @include typo-size($text_font, map-get($font-sizes, xlg));
+    @include typo-size($text_font, map-get($font-sizes, lg));
     font-weight: 500;
     &__element {
       padding-left: 30px;
@@ -20,14 +20,14 @@
 
 .explore {
   background-color: $bgd-gray;
-  height: 430px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   &__header {
-    @include typo-size($text_font, map-get($font-sizes, title));
+    @include typo-size($text_font, map-get($font-sizes, sm-title));
+    margin-bottom: 10px;
     width: 70%;
     text-align: center;
   }
@@ -35,7 +35,8 @@
   p {
     width: 85%;
     text-align: center;
-    @include typo-size($text_font, map-get($font-sizes, xlg));
-    font-weight: 300;
+    @include typo-size($text_font, map-get($font-sizes, lg));
+    font-weight: 200;
+        margin-bottom: 10px;
   }
 }
