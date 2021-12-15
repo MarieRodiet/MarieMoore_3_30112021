@@ -1,20 +1,23 @@
 @import "../utils/variables";
 
 .restaurant-page {
-  position: relative;
-  padding-bottom: 100px;
+  position: absolute;
+  padding-bottom: 320px;
+  width: 100%;
   background-color: $bgd-gray;
-  .restaurant-title {
-    position: absolute;
-    top: -35px;
 
+  .restaurant-title {
+    position: inherit;
+    background-color: $bgd-gray;
+    top: -30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 30px 30px 30px 10px;
+    padding: 40px 0 0 15px;
     border-radius: 35px 35px 0 0;
     h1 {
       @include typo-size($brand_font, map-get($font-sizes, title));
+      padding-bottom: 10px;
     }
     path.two-restaurant {
       fill: $bgd-gray;
@@ -25,8 +28,9 @@
   .order {
     background-color: $bgd-gray;
     height: 60px;
-    position: relative;
-    bottom: -60px;
-    margin: 0 40%;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 750%);
   }
 }

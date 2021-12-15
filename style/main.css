@@ -409,6 +409,9 @@ path.three {
 }
 
 footer {
+  position: relative;
+  left: 0;
+  width: 100%;
   height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,8 +451,13 @@ footer p a {
   text-decoration: none;
 }
 
+.restaurant-footer {
+  top: 1130px;
+}
+
 .img-header {
   width: 100%;
+  position: relative;
 }
 
 .img-header img {
@@ -457,19 +465,21 @@ footer p a {
      object-fit: cover;
   overflow: hidden;
   width: 100%;
-  height: 220px;
+  height: 225px;
 }
 
 /*scss rules for the headers of the menu pages*/
 .restaurant-page {
-  position: relative;
-  padding-bottom: 100px;
+  position: absolute;
+  padding-bottom: 320px;
+  width: 100%;
   background-color: #f2f2f2;
 }
 
 .restaurant-page .restaurant-title {
-  position: absolute;
-  top: -35px;
+  position: inherit;
+  background-color: #f2f2f2;
+  top: -30px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,13 +487,14 @@ footer p a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 30px 30px 10px;
+  padding: 40px 0 0 15px;
   border-radius: 35px 35px 0 0;
 }
 
 .restaurant-page .restaurant-title h1 {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .restaurant-page .restaurant-title path.two-restaurant {
@@ -495,9 +506,11 @@ footer p a {
 .restaurant-page .order {
   background-color: #f2f2f2;
   height: 60px;
-  position: relative;
-  bottom: -60px;
-  margin: 0 40%;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 750%);
+          transform: translate(50%, 750%);
 }
 
 .restaurants {
