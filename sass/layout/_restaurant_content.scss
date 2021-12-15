@@ -34,3 +34,18 @@
     transform: translate(50%, 750%);
   }
 }
+@media only screen and (min-width: $tablet-breakpoint) {
+  body {
+    background-color: $bgd-gray;
+    .restaurant-page {
+      padding: 0px;
+      .dishes {
+        display: flex;
+        justify-content: space-around;
+      }
+      .order {
+        transform: translate(50%, 500%);
+      }
+    }
+  }
+}

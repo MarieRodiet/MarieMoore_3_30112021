@@ -31,3 +31,11 @@ footer {
 .restaurant-footer{
     top: 1130px;
 }
+
+@media only screen and (min-width: $tablet-breakpoint) {
+
+.restaurant-footer{
+    top: 500px;
+}
+}
+
