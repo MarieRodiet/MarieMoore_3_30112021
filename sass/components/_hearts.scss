@@ -32,7 +32,9 @@ path.three {
 }
 
 .hearts_container:hover > .gradient-heart-box {
-  animation: showUp 1s linear 0.2s 1 normal forwards;
+  animation-name: showUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   animation-play-state: running;
 }
 

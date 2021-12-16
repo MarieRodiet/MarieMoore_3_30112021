@@ -16,15 +16,16 @@
 }
 
 @media only screen and (min-width: $tablet-breakpoint) {
-.instructions {
-  padding: 20px;
-  h2 {
-    @include typo-size($text_font, map-get($font-sizes, title));
-  }
+  .instructions {
+    padding: 20px;
+    h2 {
+      @include typo-size($text_font, map-get($font-sizes, title));
+    }
 
-  &__container {
-    display: flex;
-    flex-direction: row;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      background-color: $bgd-gray;
+    }
   }
-}
 }
