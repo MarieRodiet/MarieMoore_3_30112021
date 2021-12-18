@@ -1,12 +1,32 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-header {
+.omf_header {
+
   padding: 30px;
   text-align: center;
   height: 80px;
 
   img {
     height: 35px;
+  }
+}
+
+//header specific to restaurant pages
+.arrow-link {
+  color: black;
+  &:visited {
+    color: darken($tertiary-color, 20%);
+  }
+}
+.arrow-box {
+  transform: scale(1.6);
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  &:hover path {
+    fill: darken($bgd-gray, 60%);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
   }
 }

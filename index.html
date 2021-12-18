@@ -14,7 +14,22 @@
   <link rel="stylesheet" href="./style/main.css" />
 </head>
 
-<body>
+<body id="loader">
+    <div class="spinner-box">
+      <svg viewBox="0 0 512 512" width="100" title="spinner">
+        <defs>
+          <radialGradient id="SpinnerGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
+            <stop offset="5%" stop-color="#9356dc" />
+            <stop offset="50%" stop-color="#99e2d0" />
+            <stop offset="90%" stop-color="#ff79da" />
+          </radialGradient>
+        </defs>
+        <g>
+          <path class="loader-icon"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z" />
+        </g>
+      </svg>
+    </div>
   <header class="omf_header">
     <img src="img/logo/ohmyfood.png" alt="ohmyfood logo" />
   </header>

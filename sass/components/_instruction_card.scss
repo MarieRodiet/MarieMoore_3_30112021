@@ -50,7 +50,7 @@
     font-weight: 300;
 
     .icon_box {
-      margin: 10px 0px 0px -12px;
+      margin: -5px -5px 0px -12px;
       @include typo-size($text_font, map-get($font-sizes, xlg));
     }
     p {

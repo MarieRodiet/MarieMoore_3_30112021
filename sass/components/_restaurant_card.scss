@@ -10,7 +10,7 @@
   background-color: #fff;
   border-radius: 20px;
   cursor: pointer;
-  @include box-shadow(0px, 0px, 10px);
+  @include box-shadow(0px, 0px, 0px);
   text-decoration: none;
 
   .img-box {

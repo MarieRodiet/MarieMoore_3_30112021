@@ -1,17 +1,21 @@
 @import "../utils/variables";
 .instructions {
-  padding: 40px 5%;
+  padding: 70px 0 0px 3%;
+  width: 95%;
   h2 {
-    padding-bottom: 20px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 600px;
     @include typo-size($text_font, map-get($font-sizes, title));
   }
 
   &__container {
-    background-color: #fff;
+    background-color: $bgd-gray;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-left: 2%;
   }
 }
 
@@ -19,7 +23,9 @@
   .instructions {
     padding: 20px;
     h2 {
-      @include typo-size($text_font, map-get($font-sizes, title));
+      margin: 15px;
+      width: 45%;
+      max-width: 750px;
     }
 
     &__container {

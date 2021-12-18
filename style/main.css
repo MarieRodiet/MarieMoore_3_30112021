@@ -24,14 +24,38 @@
   }
 }
 
-header {
+.omf_header {
   padding: 30px;
   text-align: center;
   height: 80px;
 }
 
-header img {
+.omf_header img {
   height: 35px;
+}
+
+.arrow-link {
+  color: black;
+}
+
+.arrow-link:visited {
+  color: #4acbab;
+}
+
+.arrow-box {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  position: absolute;
+  top: 35px;
+  left: 30px;
+}
+
+.arrow-box:hover path {
+  fill: #595959;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .badge {
@@ -164,8 +188,8 @@ path.three {
   cursor: pointer;
   background: #9356dc;
   background: linear-gradient(354deg, #9356dc 15%, #ff79da 93%);
-  -webkit-box-shadow: 0px 8px 6px #d9d9d9;
-          box-shadow: 0px 8px 6px #d9d9d9;
+  -webkit-box-shadow: 0px 8px 6px #bfbfbf;
+          box-shadow: 0px 8px 6px #bfbfbf;
 }
 
 .btn:hover {
@@ -195,8 +219,8 @@ path.three {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0px 0px 10px #d9d9d9;
-          box-shadow: 0px 0px 10px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 10px #bfbfbf;
+          box-shadow: 0px 0px 10px #bfbfbf;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
@@ -535,8 +559,8 @@ path.three {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  -webkit-box-shadow: 2px 2px 12px #d9d9d9;
-          box-shadow: 2px 2px 12px #d9d9d9;
+  -webkit-box-shadow: 2px 2px 12px #bfbfbf;
+          box-shadow: 2px 2px 12px #bfbfbf;
 }
 
 .instructions__container__card__nb {
@@ -586,7 +610,7 @@ path.three {
     font-weight: 300;
   }
   .instructions__container__card .icon_box {
-    margin: 10px 0px 0px -12px;
+    margin: -5px -5px 0px -12px;
     font-family: "Roboto", sans-serif;
     font-size: 22px;
   }
@@ -624,8 +648,8 @@ path.three {
   background-color: #fff;
   border-radius: 20px;
   cursor: pointer;
-  -webkit-box-shadow: 0px 0px 10px #d9d9d9;
-          box-shadow: 0px 0px 10px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 0px #bfbfbf;
+          box-shadow: 0px 0px 0px #bfbfbf;
   text-decoration: none;
 }
 
@@ -772,6 +796,10 @@ footer p a {
   top: 1130px;
 }
 
+.note-enchantee-footer {
+  top: 1190px;
+}
+
 @media only screen and (min-width: 990px) {
   .restaurant-footer {
     top: 500px;
@@ -866,7 +894,9 @@ footer p a {
 .restaurants h2 {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
-  padding-bottom: 40px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 600px;
 }
 
 .restaurants .restaurants_section {
@@ -884,8 +914,9 @@ footer p a {
     padding: 20px;
   }
   .restaurants h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
+    margin: 15px;
+    width: 45%;
+    max-width: 750px;
   }
   .restaurants .restaurants_section {
     -webkit-box-orient: horizontal;
@@ -942,7 +973,7 @@ footer p a {
 
 .explore {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -972,21 +1003,24 @@ footer p a {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 200;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .instructions {
-  padding: 40px 5%;
+  padding: 70px 0 0px 3%;
+  width: 95%;
 }
 
 .instructions h2 {
-  padding-bottom: 20px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 600px;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
 }
 
 .instructions__container {
-  background-color: #fff;
+  background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -999,6 +1033,7 @@ footer p a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 2%;
 }
 
 @media only screen and (min-width: 990px) {
@@ -1006,8 +1041,9 @@ footer p a {
     padding: 20px;
   }
   .instructions h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
+    margin: 15px;
+    width: 45%;
+    max-width: 750px;
   }
   .instructions__container {
     display: -webkit-box;
@@ -1018,6 +1054,90 @@ footer p a {
         -ms-flex-direction: row;
             flex-direction: row;
     background-color: #f2f2f2;
+  }
+}
+
+#loader {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+#loader .spinner-box {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: loader;
+          animation-name: loader;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#loader .spinner-box svg {
+  background-color: #f2f2f2;
+  border-radius: 50px;
+}
+
+#loader .spinner-box svg path {
+  fill: url(#SpinnerGradient);
+}
+
+body {
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(190deg);
+            transform: rotate(190deg);
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(190deg);
+            transform: rotate(190deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

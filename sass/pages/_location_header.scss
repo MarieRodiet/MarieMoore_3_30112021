@@ -20,7 +20,7 @@
 
 .explore {
   background-color: $bgd-gray;
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -37,6 +37,6 @@
     text-align: center;
     @include typo-size($text_font, map-get($font-sizes, lg));
     font-weight: 200;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
   }
 }

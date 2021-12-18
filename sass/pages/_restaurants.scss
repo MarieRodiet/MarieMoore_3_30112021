@@ -6,7 +6,9 @@
 
   h2 {
     @include typo-size($text_font, map-get($font-sizes, title));
-    padding-bottom: 40px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 600px;
   }
 
   .restaurants_section {
@@ -18,12 +20,14 @@
   .restaurants {
     padding: 20px;
     h2 {
-      @include typo-size($text_font, map-get($font-sizes, title));
-    }
-      .restaurants_section {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  margin: 15px;
+  width: 45%;
+    max-width: 750px;
   }
+    .restaurants_section {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
   }
 }

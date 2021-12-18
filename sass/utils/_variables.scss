@@ -22,3 +22,21 @@ $font-sizes: (
 );
 
 $tablet-breakpoint: 990px;
+@media only screen and (min-width: $tablet-breakpoint) {
+  $font-sizes: (
+  //ohmyfood
+  header: 52px,
+  sm-header: 47px,
+  //Reservez, fonctionnement, Restaurants
+  bg-title: 39px,
+  title: 32px,
+  sm-title: 30px,
+  //icons
+  xxlg: 27px,
+  //location txt, instruction txt
+  xlg: 25px,
+  lg: 22px,
+  sm: 20px,
+  xsm: 17px
+);
+}
