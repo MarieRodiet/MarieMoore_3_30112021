@@ -1,6 +1,7 @@
 @import "../utils/variables";
 .instructions {
-  padding: 70px 0 0px 3%;
+
+  padding: 60px 0 60px 3%;
   width: 95%;
   h2 {
     margin: 15px auto;
@@ -10,7 +11,7 @@
   }
 
   &__container {
-    background-color: $bgd-gray;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

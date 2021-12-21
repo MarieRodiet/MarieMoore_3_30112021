@@ -12,4 +12,7 @@
   font-weight: 500;
   padding-top: 10px;
   @include typo-size($text_font, map-get($font-sizes, lg));
+  &:hover {
+    background-color: darken($tertiary-color, 10%);
+  }
 }
