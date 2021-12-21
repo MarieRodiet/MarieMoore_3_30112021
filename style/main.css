@@ -9,21 +9,6 @@
   /* Safari/Chrome, autres WebKit */
 }
 
-/*media query mixins*/
-.projet-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 599px) {
-  .projet-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .omf_header {
   padding: 30px;
   text-align: center;
@@ -164,21 +149,6 @@ path.three {
 }
 
 /*Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible.*/
-/*media query mixins*/
-.projet-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 599px) {
-  .projet-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .btn {
   border-radius: 40px;
   border: none;
@@ -624,21 +594,6 @@ path.three {
   }
 }
 
-/*media query mixins*/
-.projet-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 599px) {
-  .projet-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .restaurant_link {
   margin: 15px auto;
   width: 90%;
@@ -807,7 +762,7 @@ footer p a {
 
 @media only screen and (min-width: 990px) {
   .restaurant-footer {
-    top: 500px;
+    top: 620px;
   }
 }
 
@@ -824,7 +779,6 @@ footer p a {
   height: 225px;
 }
 
-/*scss rules for the headers of the menu pages*/
 .restaurant-page {
   position: absolute;
   padding-bottom: 320px;
@@ -869,6 +823,10 @@ footer p a {
           transform: translate(50%, 750%);
 }
 
+.restaurant-page-taller .order {
+  bottom: 48%;
+}
+
 @media only screen and (min-width: 990px) {
   body {
     background-color: #f2f2f2;
@@ -886,6 +844,12 @@ footer p a {
   body .restaurant-page .order {
     -webkit-transform: translate(50%, 500%);
             transform: translate(50%, 500%);
+  }
+  body .restaurant-page-taller {
+    padding-bottom: 380px;
+  }
+  body .restaurant-page-taller .order {
+    bottom: 68%;
   }
 }
 
@@ -932,21 +896,6 @@ footer p a {
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-/*media query mixins*/
-.projet-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 599px) {
-  .projet-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
   }
 }
 
@@ -1226,18 +1175,4 @@ body{
       }
     }
   }*/
-/*media query mixins*/
-.projet-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 599px) {
-  .projet-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
 /*# sourceMappingURL=main.css.map */

@@ -35,6 +35,13 @@
   }
 }
 
+//specific to la note enchantee
+.restaurant-page-taller {
+  .order {
+    bottom: 48%;
+  }
+}
+
 @media only screen and (min-width: $tablet-breakpoint) {
   body {
     background-color: $bgd-gray;
@@ -46,6 +53,13 @@
       }
       .order {
         transform: translate(50%, 500%);
+      }
+    }
+    //specific to la note enchantee
+    .restaurant-page-taller {
+      padding-bottom: 380px;
+      .order {
+        bottom: 68%;
       }
     }
   }

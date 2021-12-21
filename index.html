@@ -17,7 +17,7 @@
 <body>
   <div id="loader">
     <div id="loader-img">
-      <svg viewBox="0 0 512 512" width="100" title="spinner">
+      <svg viewBox="0 0 512 512" width="100">
         <defs>
           <radialGradient id="SpinnerGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
             <stop offset="5%" stop-color="#9356dc" />
@@ -48,222 +48,221 @@
       <p>
         Découvrez des restaurants d'exception, sélectionnés par nos soins.
       </p>
-      <button class="btn"><a href="#restaurants-link">Explorer nos restaurants</a></button>
+      <a href="#restaurants-link" class="btn">Explorer nos restaurants</a>
     </div>
     <section class="instructions">
-      <h2>Fonctionnement</h1>
-        <div class="instructions__container">
-          <div class="instructions__container__card">
-            <span class="instructions__container__card__nb"></span>
-            <span class="instructions__container__card__nb__content">1</span>
-            <div class="icon_box">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <p>Choississez un restaurant</p>
+      <h2>Fonctionnement</h2>
+      <div class="instructions__container">
+        <div class="instructions__container__card">
+          <span class="instructions__container__card__nb"></span>
+          <span class="instructions__container__card__nb__content">1</span>
+          <div class="icon_box">
+            <i class="fas fa-mobile-alt"></i>
           </div>
-          <div class="instructions__container__card">
-            <span class="instructions__container__card__nb"></span>
-            <span class="instructions__container__card__nb__content">2</span>
-            <div class="icon_box">
-              <i class="fas fa-list"></i>
-            </div>
-            <p>Composez votre menu</p>
-          </div>
-
-          <div class="instructions__container__card">
-            <span class="instructions__container__card__nb"></span>
-            <span class="instructions__container__card__nb__content">3</span>
-            <div class="icon_box hear_box">
-              <i class="fas fa-store"></i>
-            </div>
-            <p>Dégustez au restaurant</p>
-          </div>
+          <p>Choississez un restaurant</p>
         </div>
+        <div class="instructions__container__card">
+          <span class="instructions__container__card__nb"></span>
+          <span class="instructions__container__card__nb__content">2</span>
+          <div class="icon_box">
+            <i class="fas fa-list"></i>
+          </div>
+          <p>Composez votre menu</p>
+        </div>
+
+        <div class="instructions__container__card">
+          <span class="instructions__container__card__nb"></span>
+          <span class="instructions__container__card__nb__content">3</span>
+          <div class="icon_box hear_box">
+            <i class="fas fa-store"></i>
+          </div>
+          <p>Dégustez au restaurant</p>
+        </div>
+      </div>
     </section>
     <section class="restaurants" id="restaurants-link">
-      <h2>Restaurants</h1>
-        <div class="restaurants_section">
-          <a class="restaurant_link" href="la_palette_du_gout.html">
-            <div class="card">
-              <div class="img-box">
-                <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
-                <div class="badge">Nouveau</div>
+      <h2>Restaurants</h2>
+      <div class="restaurants_section">
+        <a class="restaurant_link" href="la_palette_du_gout.html">
+          <div class="card">
+            <div class="img-box">
+              <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
+              <div class="badge">Nouveau</div>
+            </div>
+            <div class="card_content">
+              <div class="restaurant">
+                <p class="restaurant_name">La palette du goût</p>
+                <p class="restaurant_location">Ménilmontant</p>
               </div>
-              <div class="card_content">
-                <div class="restaurant">
-                  <p class="restaurant_name">La palette du goût</p>
-                  <p class="restaurant_location">Ménilmontant</p>
-                </div>
-                <div class="hearts_container">
-                  <div class="border-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <g>
-                        <path class="one" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                        <path class="two" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
+              <div class="hearts_container">
+                <div class="border-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path class="one" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                      <path class="two" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
 
-                  </div>
-                  <div class="gradient-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <defs>
-                        <radialGradient id="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
-                          <stop offset="20%" stop-color="#9356DC" />
-                          <stop offset="80%" stop-color="#FF79DA" />
-                        </radialGradient>
-                      </defs>
-                      <g>
-                        <path class="three"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
-                  </div>
+                </div>
+                <div class="gradient-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <defs>
+                      <radialGradient class="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
+                        <stop offset="20%" stop-color="#9356DC" />
+                        <stop offset="80%" stop-color="#FF79DA" />
+                      </radialGradient>
+                    </defs>
+                    <g>
+                      <path class="three"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
                 </div>
               </div>
             </div>
-          </a>
-          <a class="restaurant_link" href="la_note_enchantee.html">
-            <div class="card">
-              <div class="img-box">
-                <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
-                <div class="badge">Nouveau</div>
-              </div>
-              <div class="card_content">
+          </div>
+        </a>
+        <a class="restaurant_link" href="la_note_enchantee.html">
+          <div class="card">
+            <div class="img-box">
+              <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
+              <div class="badge">Nouveau</div>
+            </div>
+            <div class="card_content">
 
-                <div class="restaurant">
-                  <p class="restaurant_name">La note enchantée</p>
-                  <p class="restaurant_location">Charonne</p>
+              <div class="restaurant">
+                <p class="restaurant_name">La note enchantée</p>
+                <p class="restaurant_location">Charonne</p>
+
+              </div>
+              <div class="hearts_container">
+                <div class="border-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path class="one" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                      <path class="two" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
 
                 </div>
-                <div class="hearts_container">
-                  <div class="border-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <g>
-                        <path class="one" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                        <path class="two" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
-
-                  </div>
-                  <div class="gradient-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <defs>
-                        <radialGradient id="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
-                          <stop offset="20%" stop-color="#9356DC" />
-                          <stop offset="80%" stop-color="#FF79DA" />
-                        </radialGradient>
-                      </defs>
-                      <g>
-                        <path class="three"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
-                  </div>
+                <div class="gradient-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <defs>
+                      <radialGradient class="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
+                        <stop offset="20%" stop-color="#9356DC" />
+                        <stop offset="80%" stop-color="#FF79DA" />
+                      </radialGradient>
+                    </defs>
+                    <g>
+                      <path class="three"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
                 </div>
               </div>
             </div>
-          </a>
+          </div>
+        </a>
 
-          <a class="restaurant_link" href="a_la_francaise.html">
-            <div class="card">
-              <div class="img-box">
-                <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" />
+        <a class="restaurant_link" href="a_la_francaise.html">
+          <div class="card">
+            <div class="img-box">
+              <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" />
+            </div>
+            <div class="card_content">
+              <div class="restaurant">
+                <p class="restaurant_name">À la française</p>
+                <p class="restaurant_location">Cité Rouge</p>
               </div>
-              <div class="card_content">
-                <div class="restaurant">
-                  <p class="restaurant_name">À la française</p>
-                  <p class="restaurant_location">Cité Rouge</p>
-                </div>
-                <div class="hearts_container">
-                  <div class="border-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <g>
-                        <path class="one" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                        <path class="two" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
+              <div class="hearts_container">
+                <div class="border-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path class="one" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                      <path class="two" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
 
-                  </div>
-                  <div class="gradient-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <defs>
-                        <radialGradient id="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
-                          <stop offset="20%" stop-color="#9356DC" />
-                          <stop offset="80%" stop-color="#FF79DA" />
-                        </radialGradient>
-                      </defs>
-                      <g>
-                        <path class="three"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
-                  </div>
                 </div>
+                <div class="gradient-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <defs>
+                      <radialGradient class="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
+                        <stop offset="20%" stop-color="#9356DC" />
+                        <stop offset="80%" stop-color="#FF79DA" />
+                      </radialGradient>
+                    </defs>
+                    <g>
+                      <path class="three"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
 
+            </div>
+          </div>
+        </a>
+        <a class="restaurant_link" href="le_delice_des_sens.html">
+          <div class="card">
+            <div class="img-box">
+              <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
+            </div>
+            <div class="card_content">
+              <div class="restaurant">
+                <p class="restaurant_name">Le délice des sens</p>
+                <p class="restaurant_location">Folie-Méricourt</p>
+              </div>
+              <div class="hearts_container">
+                <div class="border-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <g>
+                      <path class="one" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                      <path class="two" fill="currentColor"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
+
+                </div>
+                <div class="gradient-heart-box">
+                  <svg viewBox="0 0 512 512">
+                    <defs>
+                      <radialGradient id="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
+                        <stop offset="20%" stop-color="#9356DC" />
+                        <stop offset="80%" stop-color="#FF79DA" />
+                      </radialGradient>
+                    </defs>
+                    <g>
+                      <path class="three"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
               </div>
             </div>
-          </a>
-          <a class="restaurant_link" href="le_delice_des_sens.html">
-            <div class="card">
-              <div class="img-box">
-                <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="Le délice des sens" />
-              </div>
-              <div class="card_content">
-                <div class="restaurant">
-                  <p class="restaurant_name">Le délice des sens</p>
-                  <p class="restaurant_location">Folie-Méricourt</p>
-                </div>
-                <div class="hearts_container">
-                  <div class="border-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <g>
-                        <path class="one" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                        <path class="two" fill="currentColor"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
+          </div>
+        </a>
 
-                  </div>
-                  <div class="gradient-heart-box">
-                    <svg viewBox="0 0 512 512">
-                      <defs>
-                        <radialGradient id="MyGradient" cx="75%" cy="15%" r="100%" fx="40%" fy="25%">
-                          <stop offset="20%" stop-color="#9356DC" />
-                          <stop offset="80%" stop-color="#FF79DA" />
-                        </radialGradient>
-                      </defs>
-                      <g>
-                        <path class="three"
-                          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                        </path>
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-
-        </div>
+      </div>
     </section>
   </main>
   <footer>
