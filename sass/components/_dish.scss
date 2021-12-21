@@ -69,7 +69,6 @@
   .price {
     @include typo-size($text_font, map-get($font-sizes, xsm));
     padding-top: 25px;
-    transform: translateX(20px);
   }
 
   .outer {
@@ -187,7 +186,7 @@
     }
     .outer .green-box {
       height: 70px;
-      width: 70px;
+      width: 50px;
     }
 
     &:hover .price {
