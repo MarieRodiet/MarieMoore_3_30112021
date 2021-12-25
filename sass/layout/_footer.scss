@@ -17,9 +17,12 @@ footer {
   }
   .icon_txt_gp {
     display: flex;
+    span {
+      padding-left: 10px;
+    }
   }
   .footer_icon {
-    width: 40px;
+    width: 20px;
     height: auto;
   }
 
@@ -28,18 +31,16 @@ footer {
     text-decoration: none;
   }
 }
-.restaurant-footer{
-    top: 1130px;
+.restaurant-footer {
+  top: 1130px;
 }
 
-.note-enchantee-footer{
+.note-enchantee-footer {
   top: 1190px;
 }
 
 @media only screen and (min-width: $tablet-breakpoint) {
-
-.restaurant-footer{
+  .restaurant-footer {
     top: 620px;
+  }
 }
-}
-

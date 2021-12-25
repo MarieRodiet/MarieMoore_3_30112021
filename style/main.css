@@ -740,8 +740,12 @@ footer .icon_txt_gp {
   display: flex;
 }
 
+footer .icon_txt_gp span {
+  padding-left: 10px;
+}
+
 footer .footer_icon {
-  width: 40px;
+  width: 20px;
   height: auto;
 }
 
