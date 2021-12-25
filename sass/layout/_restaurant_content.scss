@@ -52,7 +52,7 @@
         justify-content: space-around;
       }
       .order {
-        transform: translate(50%, 500%);
+        transform: translate(50%, 600%);
       }
     }
     //specific to la note enchantee
@@ -60,6 +60,7 @@
       padding-bottom: 380px;
       .order {
         bottom: 68%;
+        transform: translate(50%, 450%);
       }
     }
   }

@@ -840,14 +840,16 @@ footer p a {
         justify-content: space-around;
   }
   body .restaurant-page .order {
-    -webkit-transform: translate(50%, 500%);
-            transform: translate(50%, 500%);
+    -webkit-transform: translate(50%, 600%);
+            transform: translate(50%, 600%);
   }
   body .restaurant-page-taller {
     padding-bottom: 380px;
   }
   body .restaurant-page-taller .order {
     bottom: 68%;
+    -webkit-transform: translate(50%, 450%);
+            transform: translate(50%, 450%);
   }
 }
 
