@@ -37,6 +37,7 @@
     color: darken($color: $bgd-gray, $amount: 50%);
     svg {
       width: 0.625em;
+      overflow: visible;
     }
   }
   p {

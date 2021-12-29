@@ -569,6 +569,7 @@ path.three {
 
 .instructions__container__card .icon_box svg {
   width: 0.625em;
+  overflow: visible;
 }
 
 .instructions__container__card p {
