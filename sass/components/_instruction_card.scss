@@ -35,6 +35,9 @@
 
     @include typo-size($text_font, map-get($font-sizes, xlg));
     color: darken($color: $bgd-gray, $amount: 50%);
+    svg {
+      width: 0.625em;
+    }
   }
   p {
     font-weight: 300;

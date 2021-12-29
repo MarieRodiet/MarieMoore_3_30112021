@@ -567,6 +567,10 @@ path.three {
   color: #737373;
 }
 
+.instructions__container__card .icon_box svg {
+  width: 0.625em;
+}
+
 .instructions__container__card p {
   font-weight: 300;
 }
