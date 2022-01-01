@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Projet 3 OpenClassrooms dev web front end js react",
   "main": "index.js",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
   "devDependencies": {},
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:public/css/style.css",
